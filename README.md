@@ -10,5 +10,9 @@ https://www.w3schools.com/html/html_basic.asp
 CSS code examples
 https://www.w3schools.com/w3css/w3css_examples.asp
 
-Adding Powerpoin slides
+Adding Powerpoint slides
 https://support.microsoft.com/en-us/office/embed-a-presentation-in-a-web-page-or-blog-19668a1d-2299-4af3-91e1-ae57af723a60
+
+
+Menus
+https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
