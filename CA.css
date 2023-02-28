@@ -1,4 +1,6 @@
- /* Navbar container */
+header {background-color: #be2225;}
+
+/* Navbar container */
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -67,3 +69,8 @@
 .dropdown:hover .dropdown-content {
   display: block;
 } 
+
+footer { font-size:.70em;
+		font-style: italic;
+		color: #be2225;
+		text-align: center;}
