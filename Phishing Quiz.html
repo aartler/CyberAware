@@ -47,20 +47,19 @@
 			<script>
 			(function(){
   function buildQuiz(){
-    // variable to store the HTML output
     const output = [];
 
-    // for each question...
+    // foreach question
     myQuestions.forEach(
       (currentQuestion, questionNumber) => {
 
-        // variable to store the list of possible answers
+        // variable possible answers
         const answers = [];
 
-        // and for each available answer...
+        // foreach possible answer
         for(letter in currentQuestion.answers){
 
-          // ...add an HTML radio button
+          // 
           answers.push(
             `<label>
               <input type="radio" name="question${questionNumber}" value="${letter}">
