@@ -120,35 +120,34 @@
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
   const myQuestions = [
-    {
-      question: "Who invented JavaScript?",
-      answers: {
-        a: "Douglas Crockford",
-        b: "Sheryl Sandberg",
-        c: "Brendan Eich"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Which one of these is a JavaScript package manager?",
-      answers: {
-        a: "Node.js",
-        b: "TypeScript",
-        c: "npm"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Which tool can you use to ensure code quality?",
-      answers: {
-        a: "Angular",
-        b: "jQuery",
-        c: "RequireJS",
-        d: "ESLint"
-      },
-      correctAnswer: "d"
-    }
-  ];
+  {
+    question: "What should you do as an employee if you suspect a phishing attack?",
+	  answers: {
+    		A.: "Report it so the Cybersecurity team can investigate",
+    		B.: "Ignore it",
+    		C.: "Open the email and see whether it looks legitimate",
+    		D.: "Show your coworkers to see what they think"},
+    correctAnswer: "A."
+  },
+  {
+    question: "What can happen if you click on a phishing email link or attachment?",
+	  answers: {
+    		A.: "The email sender could gain access to company systems",
+    		B.: "The email sender could steal your personal information or company information",
+    		C.: "The email sender could distribute malware into the company network",
+    		D.: "All of the above"},
+    correctAnswer: "D."
+  },
+  {
+    question: "How can a person executing a phishing attack steal someone's identity?",
+	  answers: {
+   		A.: "They pretend they are someone else when emailing phishing messages, so that's like stealing an identity",
+    		B.: "They ask for personal information on a webpage or pop-up window linked from the phishing email, and they use the information entered to make illegal purchases or commit fraud",
+    		C.: "They send a request for the recipient's bank information",
+    		D.: "Gaining information from profile"},
+    correctAnswer: "B."
+  }
+];
 
   // Kick things off
   buildQuiz();
