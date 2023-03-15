@@ -69,7 +69,7 @@
           );
         }
 
-        // add this question and its answers to the output
+        // add question and answers to the output
         output.push(
           `<div class="question"> ${currentQuestion.question} </div>
           <div class="answers"> ${answers.join('')} </div>`
@@ -77,19 +77,18 @@
       }
     );
 
-    // finally combine our output list into one string of HTML and put it on the page
+    // list questions on the page in html
     quizContainer.innerHTML = output.join('');
   }
 
   function showResults(){
 
-    // gather answer containers from our quiz
+    // get answeers from container
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
-    // keep track of user's answers
-    let numCorrect = 0;
-
-    // for each question...
+    // track correct answers
+    let ansCorrect = 0;
+	  
     myQuestions.forEach( (currentQuestion, questionNumber) => {
 
       // find selected answer
@@ -97,23 +96,21 @@
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-      // if answer is correct
-      if(userAnswer === currentQuestion.correctAnswer){
-        // add to the number of correct answers
-        numCorrect++;
+      // if correct
+      if(userAnswer === currentQuestion.correctAnswer);
+        ansCorrect++;
 
-        // color the answers green
+        // correct answer green
         answerContainers[questionNumber].style.color = 'lightgreen';
       }
-      // if answer is wrong or blank
       else{
-        // color the answers red
+        // incorrect answer red
         answerContainers[questionNumber].style.color = 'red';
       }
     });
 
-    // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    // list total number of correct answers
+    resultsContainer.innerHTML = `${ansCorrect} out of ${myQuestions.length}`;
   }
 
   const quizContainer = document.getElementById('quiz');
@@ -149,10 +146,8 @@
   }
 ];
 
-  // Kick things off
   buildQuiz();
 
-  // Event listeners
   submitButton.addEventListener('click', showResults);
 })();
 </script>
