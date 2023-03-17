@@ -52,7 +52,7 @@
     const output = [];
 
     // foreach question
-    questions.forEach(
+    phQuestions.forEach(
       (currentQuestion, questionNumber) => {
 
         // variable possible answers
@@ -85,14 +85,13 @@
 
   function showResults(){
 
-    // gather answer containers from our quiz
+    // gather answer containers
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
-    // keep track of user's answers
+    // Track users answers
     let numCorrect = 0;
 
-    // for each question...
-    questions.forEach( (currentQuestion, questionNumber) => {
+    phQuestions.forEach( (currentQuestion, questionNumber) => {
 
       // find selected answer
       const answerContainer = answerContainers[questionNumber];
@@ -101,11 +100,10 @@
 
       // if answer is correct
       if(userAnswer === currentQuestion.correctAnswer){
-        // add to the number of correct answers
         numCorrect++;
 
         // color the answers green
-        answerContainers[questionNumber].style.color = 'lightgreen';
+        answerContainers[questionNumber].style.color = 'green';
       }
       // if answer is wrong or blank
       else{
@@ -115,13 +113,13 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${questions.length}`;
+    resultsContainer.innerHTML = `${numCorrect} out of ${phQuestions.length}`;
   }
 
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
-  const myQuestions = [
+  const phQuestions = [
   {
     question: "What should you do as an employee if you suspect a phishing attack?",
 	  answers: {
