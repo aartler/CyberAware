@@ -46,6 +46,8 @@
 <main>
 	<div id="content">
 		<h1> Network Quiz </h1>
+		<!--Quiz example code found at https://www.freecodecamp.org/news/multiple-choice-quiz-template/-->
+		
 		<div style='transform: scale(1); position: relative; top: 20px;'>
   <h3>When should you download software?</h3>
 
@@ -96,22 +98,22 @@
       document.getElementById('block-1').style.border = '3px solid red'
       document.getElementById('result-1').style.color = 'red'
       document.getElementById('result-1').innerHTML = 'Incorrect!'
-	   showCorrectAnswer1()
+      showCorrectAnswer1()
     }
     if (document.getElementById('option-3').checked) {
       document.getElementById('block-3').style.border = '3px solid red'
       document.getElementById('result-3').style.color = 'red'
       document.getElementById('result-3').innerHTML = 'Incorrect!'
-	    showCorrectAnswer1()
+      showCorrectAnswer1()
     }
     if (document.getElementById('option-4').checked) {
       document.getElementById('block-4').style.border = '3px solid red'
       document.getElementById('result-4').style.color = 'red'
-      document.getElementById('result-4').innerHTML = 'Incorrect!
-	    showCorrectAnswer1()
+      document.getElementById('result-4').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
     }
   }
-	 // the functon displays the link to the correct answer
+  // the functon displays the link to the correct answer
   function showCorrectAnswer1() {
     let showAnswer1 = document.createElement('p')
     showAnswer1.innerHTML = 'Show Corrent Answer'
@@ -127,7 +129,6 @@
     })
   }
 </script>
-
 </main>
 
 <footer>
