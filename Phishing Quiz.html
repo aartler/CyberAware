@@ -46,13 +46,13 @@
 			<button id="submit">Submit Quiz</button>
 			<div id="results"></div>
 			<script>
-				//script example found it https://www.sitepoint.com/simple-javascript-quiz/ explains how to intergrate script into html for a quiz
+				//script example found at https://www.sitepoint.com/simple-javascript-quiz/ explains how to intergrate script into html for a quiz
 			(function(){
   function buildQuiz(){
     const output = [];
 
     // foreach question
-    myQuestions.forEach(
+    questions.forEach(
       (currentQuestion, questionNumber) => {
 
         // variable possible answers
@@ -92,7 +92,7 @@
     let numCorrect = 0;
 
     // for each question...
-    myQuestions.forEach( (currentQuestion, questionNumber) => {
+    questions.forEach( (currentQuestion, questionNumber) => {
 
       // find selected answer
       const answerContainer = answerContainers[questionNumber];
@@ -115,7 +115,7 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `${numCorrect} out of ${questions.length}`;
   }
 
   const quizContainer = document.getElementById('quiz');
