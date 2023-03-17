@@ -48,12 +48,12 @@
 			<script>
 				//script example found at https://www.sitepoint.com/simple-javascript-quiz/ explains how to intergrate script into html for a quiz
 			(function(){
-  function buildQuiz(){
+  function buildPhishQuiz(){
     const output = [];
 
     // foreach question
     phQuestions.forEach(
-      (currentQuestion, questionNumber) => {
+      (currentQuestion, qNumber) => {
 
         // variable possible answers
         const answers = [];
@@ -64,7 +64,7 @@
           // 
           answers.push(
             `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
+              <input type="radio" name="question${qNumber}" value="${letter}">
               ${letter} :
               ${currentQuestion.answers[letter]}
             </label>`
@@ -85,30 +85,30 @@
 
   function showResults(){
 
-    // gather answer containers
+    // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
-    // Track users answers
+    // keep track of correct user answers
     let numCorrect = 0;
 
-    phQuestions.forEach( (currentQuestion, questionNumber) => {
+    phQuestions.forEach( (currentQuestion, qNumber) => {
 
       // find selected answer
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
+      const answerContainer = answerContainers[qNumber];
+      const selector = `input[name=question${qNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-      // if answer is correct
+      // check for correct answer
       if(userAnswer === currentQuestion.correctAnswer){
         numCorrect++;
 
         // color the answers green
-        answerContainers[questionNumber].style.color = 'green';
+        userAnswer.style.color = 'lightgreen';
       }
       // if answer is wrong or blank
       else{
         // color the answers red
-        answerContainers[questionNumber].style.color = 'red';
+        userAnswer.style.color = 'red';
       }
     });
 
@@ -150,7 +150,7 @@
 ];
 
   // Kick things off
-  buildQuiz();
+  buildPhishQuiz();
 
   // Event listeners
   submitButton.addEventListener('click', showResults);
