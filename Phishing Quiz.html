@@ -144,7 +144,7 @@
   function correctAnswer1() {
     let answerQ1 = document.createElement('p')
     document.getElementById('answerQ1').appendChild(answerQ1)
-    showAnswer1.addEventListener('click', () => {
+    answerQ1.addEventListener('click', answer1() => {
       document.getElementById('block-2').style.border = '3px solid limegreen'
       document.getElementById('result-2').style.color = 'limegreen'
       document.getElementById('result-2').innerHTML = 'Correct!'
@@ -180,7 +180,7 @@ if (document.getElementById('option-21').checked) {
   function correctAnswer2() {
     let answerQ2 = document.createElement('p')
     document.getElementById('answerQ2').appendChild(answerQ2)
-    showAnswer1.addEventListener('click', () => {
+    answerQ1.addEventListener('click', answer2() => {
       document.getElementById('block-22').style.border = '3px solid limegreen'
       document.getElementById('result-22').style.color = 'limegreen'
       document.getElementById('result-22').innerHTML = 'Correct!'
