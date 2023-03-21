@@ -136,29 +136,7 @@
       document.getElementById('result-4').innerHTML = 'Incorrect!'
       correctAnswer1()
     }
-     if (document.getElementById('option-21').checked) {
-      document.getElementById('block-21').style.border = '3px solid limegreen'
-      document.getElementById('result-21').style.color = 'limegreen'
-      document.getElementById('result-21').innerHTML = 'Correct!'
-    }
-    if (document.getElementById('option-22').checked) {
-      document.getElementById('block-22').style.border = '3px solid red'
-      document.getElementById('result-22').style.color = 'red'
-      document.getElementById('result-22').innerHTML = 'Incorrect!'
-      correctAnswer1()
-    }
-    if (document.getElementById('option-23').checked) {
-      document.getElementById('block-23').style.border = '3px solid red'
-      document.getElementById('result-23').style.color = 'red'
-      document.getElementById('result-23').innerHTML = 'Incorrect!'
-      correctAnswer1()
-    }
-    if (document.getElementById('option-24').checked) {
-      document.getElementById('block-24').style.border = '3px solid red'
-      document.getElementById('result-24').style.color = 'red'
-      document.getElementById('result-24').innerHTML = 'Incorrect!'
-      correctAnswer1()
-    }
+     
   }
   // the functon displays the link to the correct answer
   function correctAnswer1() {
@@ -169,6 +147,42 @@
       document.getElementById('result-2').style.color = 'limegreen'
       document.getElementById('result-2').innerHTML = 'Correct!'
       document.getElementById('answerQ1').removeChild(answerQ1)
+    })
+  }
+function answer2() {
+if (document.getElementById('option-21').checked) {
+      document.getElementById('block-21').style.border = '3px solid limegreen'
+      document.getElementById('result-21').style.color = 'limegreen'
+      document.getElementById('result-21').innerHTML = 'Correct!'
+    }
+    if (document.getElementById('option-22').checked) {
+      document.getElementById('block-22').style.border = '3px solid red'
+      document.getElementById('result-22').style.color = 'red'
+      document.getElementById('result-22').innerHTML = 'Incorrect!'
+      correctAnswer2()
+    }
+    if (document.getElementById('option-23').checked) {
+      document.getElementById('block-23').style.border = '3px solid red'
+      document.getElementById('result-23').style.color = 'red'
+      document.getElementById('result-23').innerHTML = 'Incorrect!'
+      correctAnswer2()
+    }
+    if (document.getElementById('option-24').checked) {
+      document.getElementById('block-24').style.border = '3px solid red'
+      document.getElementById('result-24').style.color = 'red'
+      document.getElementById('result-24').innerHTML = 'Incorrect!'
+      correctAnswer2()
+    }
+  }
+  // the functon displays the link to the correct answer
+  function correctAnswer2() {
+    let answerQ2 = document.createElement('p')
+    document.getElementById('answerQ2').appendChild(answerQ2)
+    showAnswer1.addEventListener('click', () => {
+      document.getElementById('block-22').style.border = '3px solid limegreen'
+      document.getElementById('result-22').style.color = 'limegreen'
+      document.getElementById('result-22').innerHTML = 'Correct!'
+      document.getElementById('answerQ2').removeChild(answerQ2)
     })
   }
 </script>
