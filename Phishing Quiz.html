@@ -42,10 +42,10 @@
 	<div id="content">
 		<h1>Phishing Quiz</h1>
 		
-		<!--Quiz example code found at https://www.freecodecamp.org/news/multiple-choice-quiz-template/-->
+<!--Quiz example code found at https://www.freecodecamp.org/news/multiple-choice-quiz-template/-->
 		
-		<div style='transform: scale(1); position: relative; top: 20px;'>
-  <h3>What should you do as an employee if you suspect a phishing attack?</h3>
+	<div style='transform: scale(1); position: relative; top: 20px;'>
+    <h3>What should you do as an employee if you suspect a phishing attack?</h3>
 
   <div id='block-1' style='padding: 5px;'>
     <label for='option-1' style=' padding: 5px; font-size: 12px;'>
@@ -152,10 +152,10 @@
     })
   }
 function answer2() {
-if (document.getElementById('option-24').checked) {
-      document.getElementById('block-24').style.border = '3px solid limegreen'
-      document.getElementById('result-24').style.color = 'limegreen'
-      document.getElementById('result-24').innerHTML = 'Correct!'
+if (document.getElementById('option-21').checked) {
+      document.getElementById('block-21').style.border = '3px solid limegreen'
+      document.getElementById('result-21').style.color = 'limegreen'
+      document.getElementById('result-21').innerHTML = 'Correct!'
     }
     if (document.getElementById('option-22').checked) {
       document.getElementById('block-22').style.border = '3px solid red'
@@ -169,10 +169,10 @@ if (document.getElementById('option-24').checked) {
       document.getElementById('result-23').innerHTML = 'Incorrect!'
       correctAnswer2()
     }
-    if (document.getElementById('option-21').checked) {
-      document.getElementById('block-21').style.border = '3px solid red'
-      document.getElementById('result-21').style.color = 'red'
-      document.getElementById('result-21').innerHTML = 'Incorrect!'
+    if (document.getElementById('option-24').checked) {
+      document.getElementById('block-24').style.border = '3px solid red'
+      document.getElementById('result-24').style.color = 'red'
+      document.getElementById('result-24').innerHTML = 'Incorrect!'
       correctAnswer2()
     }
   }
@@ -181,9 +181,9 @@ if (document.getElementById('option-24').checked) {
     let answerQ2 = document.createElement('p')
     document.getElementById('answerQ2').appendChild(answerQ2)
     answerQ2.addEventListener('click', () => {
-      document.getElementById('block-24').style.border = '3px solid limegreen'
-      document.getElementById('result-24').style.color = 'limegreen'
-      document.getElementById('result-24').innerHTML = 'Correct!'
+      document.getElementById('block-21').style.border = '3px solid limegreen'
+      document.getElementById('result-21').style.color = 'limegreen'
+      document.getElementById('result-21').innerHTML = 'Correct!'
       document.getElementById('answerQ2').removeChild(answerQ2)
     })
   }
