@@ -74,6 +74,35 @@
       Show your coworkers to see what they think</label>
     <span id='result-4'></span>
   </div>
+<h3>What should you do as an employee if you suspect a phishing attack?</h3>
+		
+  <div id='block-21' style='padding: 5px;'>
+    <label for='option-21' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option' value='Report it so the Cybersecurity team can investigate' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Report it so the Cybersecurity team can investigate</label>
+    <span id='result-21'></span>
+  </div>
+
+  <div id='block-22' style='padding: 5px;'>
+    <label for='option-22' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option' value='Ignore it' id='option-2' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Ignore it</label>
+    <span id='result-22'></span>
+  </div>
+
+  <div id='block-23' style='padding: 5px;'>
+    <label for='option-23' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option' value='Open the email and see whether it looks legitimate' id='option-3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Open the email and see whether it looks legitimate</label>
+    <span id='result-23'></span>
+  </div>
+
+  <div id='block-24' style='padding: 10px;'>
+    <label for='option-24' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option' value='Show your coworkers to see what they think' id='option-4' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Show your coworkers to see what they think</label>
+    <span id='result-24'></span>
+  </div>
   <button type='button' onclick='answer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
 <a id='answerQ1'></a>
@@ -104,6 +133,29 @@
       document.getElementById('result-4').innerHTML = 'Incorrect!'
       correctAnswer1()
     }
+     if (document.getElementById('option-21').checked) {
+      document.getElementById('block-21').style.border = '3px solid limegreen'
+      document.getElementById('result-21').style.color = 'limegreen'
+      document.getElementById('result-21').innerHTML = 'Correct!'
+    }
+    if (document.getElementById('option-22').checked) {
+      document.getElementById('block-22').style.border = '3px solid red'
+      document.getElementById('result-22').style.color = 'red'
+      document.getElementById('result-22').innerHTML = 'Incorrect!'
+      correctAnswer1()
+    }
+    if (document.getElementById('option-23').checked) {
+      document.getElementById('block-23').style.border = '3px solid red'
+      document.getElementById('result-23').style.color = 'red'
+      document.getElementById('result-23').innerHTML = 'Incorrect!'
+      correctAnswer1()
+    }
+    if (document.getElementById('option-24').checked) {
+      document.getElementById('block-24').style.border = '3px solid red'
+      document.getElementById('result-24').style.color = 'red'
+      document.getElementById('result-24').innerHTML = 'Incorrect!'
+      correctAnswer1()
+    }
   }
   // the functon displays the link to the correct answer
   function correctAnswer1() {
@@ -117,6 +169,7 @@
     })
   }
 </script>
+
 	</div>
 
 </main>
