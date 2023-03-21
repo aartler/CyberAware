@@ -90,21 +90,21 @@
 
   <div id='block-22' style='padding: 5px;'>
     <label for='option-22' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option2' value='The email sender could steal your personal information or company information' id='option-2' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      <input type='radio' name='option2' value='The email sender could steal your personal information or company information' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
       The email sender could steal your personal information or company information</label>
     <span id='result-22'></span>
   </div>
 
   <div id='block-23' style='padding: 5px;'>
     <label for='option-23' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option2' value='The email sender could distribute malware into the company network' id='option-3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      <input type='radio' name='option2' value='The email sender could distribute malware into the company network' id='option-23' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
       The email sender could distribute malware into the company network</label>
     <span id='result-23'></span>
   </div>
 
   <div id='block-24' style='padding: 10px;'>
     <label for='option-24' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option2' value='All of the above' id='option-4' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      <input type='radio' name='option2' value='All of the above' id='option-24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
       All of the above</label>
     <span id='result-24'></span>
   </div>
@@ -152,10 +152,10 @@
     })
   }
 function answer2() {
-if (document.getElementById('option-21').checked) {
-      document.getElementById('block-21').style.border = '3px solid limegreen'
-      document.getElementById('result-21').style.color = 'limegreen'
-      document.getElementById('result-21').innerHTML = 'Correct!'
+if (document.getElementById('option-24').checked) {
+      document.getElementById('block-24').style.border = '3px solid limegreen'
+      document.getElementById('result-24').style.color = 'limegreen'
+      document.getElementById('result-24').innerHTML = 'Correct!'
     }
     if (document.getElementById('option-22').checked) {
       document.getElementById('block-22').style.border = '3px solid red'
@@ -169,10 +169,10 @@ if (document.getElementById('option-21').checked) {
       document.getElementById('result-23').innerHTML = 'Incorrect!'
       correctAnswer2()
     }
-    if (document.getElementById('option-24').checked) {
-      document.getElementById('block-24').style.border = '3px solid red'
-      document.getElementById('result-24').style.color = 'red'
-      document.getElementById('result-24').innerHTML = 'Incorrect!'
+    if (document.getElementById('option-21').checked) {
+      document.getElementById('block-21').style.border = '3px solid red'
+      document.getElementById('result-21').style.color = 'red'
+      document.getElementById('result-21').innerHTML = 'Incorrect!'
       correctAnswer2()
     }
   }
@@ -181,9 +181,9 @@ if (document.getElementById('option-21').checked) {
     let answerQ2 = document.createElement('p')
     document.getElementById('answerQ2').appendChild(answerQ2)
     answerQ2.addEventListener('click', () => {
-      document.getElementById('block-21').style.border = '3px solid limegreen'
-      document.getElementById('result-21').style.color = 'limegreen'
-      document.getElementById('result-21').innerHTML = 'Correct!'
+      document.getElementById('block-24').style.border = '3px solid limegreen'
+      document.getElementById('result-24').style.color = 'limegreen'
+      document.getElementById('result-24').innerHTML = 'Correct!'
       document.getElementById('answerQ2').removeChild(answerQ2)
     })
   }
