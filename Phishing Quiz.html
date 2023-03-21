@@ -77,7 +77,6 @@
   <button type='button' onclick='answer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
 <a id='answerQ1'></a>
-	</div>
 			
 <h3>What can happen if you click on a phishing email link or attachment?</h3>
 		
@@ -144,7 +143,7 @@
   function correctAnswer1() {
     let answerQ1 = document.createElement('p')
     document.getElementById('answerQ1').appendChild(answerQ1)
-    showAnswer1.addEventListener('click', () => {
+    answerQ1.addEventListener('click', () => {
       document.getElementById('block-2').style.border = '3px solid limegreen'
       document.getElementById('result-2').style.color = 'limegreen'
       document.getElementById('result-2').innerHTML = 'Correct!'
@@ -180,7 +179,7 @@ if (document.getElementById('option-24').checked) {
   function correctAnswer2() {
     let answerQ2 = document.createElement('p')
     document.getElementById('answerQ2').appendChild(answerQ2)
-    showAnswer1.addEventListener('click', () => {
+    answerQ2.addEventListener('click', () => {
       document.getElementById('block-24').style.border = '3px solid limegreen'
       document.getElementById('result-24').style.color = 'limegreen'
       document.getElementById('result-24').innerHTML = 'Correct!'
