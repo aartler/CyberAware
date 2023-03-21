@@ -42,6 +42,81 @@
 	<div id="content">
 		<h1>Phishing Quiz</h1>
 		
+		<!--Quiz example code found at https://www.freecodecamp.org/news/multiple-choice-quiz-template/-->
+		
+		<div style='transform: scale(1); position: relative; top: 20px;'>
+  <h3>What should you do as an employee if you suspect a phishing attack?</h3>
+
+  <div id='block-1' style='padding: 5px;'>
+    <label for='option-1' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option' value='Report it so the Cybersecurity team can investigate' id='option-1' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Report it so the Cybersecurity team can investigate</label>
+    <span id='result-1'></span>
+  </div>
+
+  <div id='block-2' style='padding: 5px;'>
+    <label for='option-2' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option' value='Ignore it' id='option-2' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Ignore it</label>
+    <span id='result-2'></span>
+  </div>
+
+  <div id='block-3' style='padding: 5px;'>
+    <label for='option-3' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option' value='Open the email and see whether it looks legitimate' id='option-3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Open the email and see whether it looks legitimate</label>
+    <span id='result-3'></span>
+  </div>
+
+  <div id='block-4' style='padding: 10px;'>
+    <label for='option-4' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option' value='Show your coworkers to see what they think' id='option-4' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Show your coworkers to see what they think</label>
+    <span id='result-4'></span>
+  </div>
+  <button type='button' onclick='answer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+</div>
+<a id='answerQ1'></a>
+	</div>
+<script>
+  //  function to get the correct answer
+  function answer1() {
+    if (document.getElementById('option-1').checked) {
+      document.getElementById('block-1').style.border = '3px solid limegreen'
+      document.getElementById('result-1').style.color = 'limegreen'
+      document.getElementById('result-1').innerHTML = 'Correct!'
+    }
+    if (document.getElementById('option-2').checked) {
+      document.getElementById('block-2').style.border = '3px solid red'
+      document.getElementById('result-2').style.color = 'red'
+      document.getElementById('result-2').innerHTML = 'Incorrect!'
+      correctAnswer1()
+    }
+    if (document.getElementById('option-3').checked) {
+      document.getElementById('block-3').style.border = '3px solid red'
+      document.getElementById('result-3').style.color = 'red'
+      document.getElementById('result-3').innerHTML = 'Incorrect!'
+      correctAnswer1()
+    }
+    if (document.getElementById('option-4').checked) {
+      document.getElementById('block-4').style.border = '3px solid red'
+      document.getElementById('result-4').style.color = 'red'
+      document.getElementById('result-4').innerHTML = 'Incorrect!'
+      correctAnswer1()
+    }
+  }
+  // the functon displays the link to the correct answer
+  function correctAnswer1() {
+    let answerQ1 = document.createElement('p')
+    document.getElementById('answerQ1').appendChild(answerQ1)
+    showAnswer1.addEventListener('click', () => {
+      document.getElementById('block-2').style.border = '3px solid limegreen'
+      document.getElementById('result-2').style.color = 'limegreen'
+      document.getElementById('result-2').innerHTML = 'Correct!'
+      document.getElementById('answerQ1').removeChild(answerQ1)
+    })
+  }
+</script>
 	</div>
 
 </main>
