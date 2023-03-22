@@ -6,6 +6,7 @@ Capstone project to create a Cybersecurity awareness program for a high school
 
 HTML example code
 https://www.w3schools.com/html/html_basic.asp
+https://www.w3schools.com/TAGS/tag_article.asp
 
 CSS code examples
 https://www.w3schools.com/w3css/w3css_examples.asp
