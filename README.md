@@ -21,3 +21,8 @@ Creating Quizzes helpful examples
 https://codeactually.com/interactivequiz.html
 https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp
 https://codingwithnick.in/create-a-quiz-app-using-html-css-javascript/
+
+News Articles
+https://www.forbes.com/sites/frederickhess/2022/10/21/schools-are-getting-hit-hard-by-cyberattacks-what-can-they-do-about-it/?sh=bf42f17b71c3
+https://abcnews.go.com/US/baltimore-schools-failed-fully-act-security-recommendations-cyber/story?id=96671802
+https://www.govtech.com/education/k-12/cyber-attacks-on-schools-who-what-why-and-now-what
