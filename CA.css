@@ -80,7 +80,15 @@
 	margin-right: auto;
 	background-color: #FFFFFF;
 	width: 900px;
-	text-align: Left;
+	text-align: center;
+}
+
+#quiz { display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	width: 900px;
+	text-align: left;
 }
 
 
