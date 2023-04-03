@@ -113,33 +113,33 @@
 <a id='answerQ2'></a>
 
 <div style='transform: scale(1); position: relative; top: 20px;'>			
-<h3>What can happen if you click on a phishing email link or attachment?</h3>
+<h3>How can a person executing a phishing attack steal someone's identity?</h3>
 		
   <div id='block-31' style='padding: 5px;'>
     <label for='option-31' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option3' value='The email sender could gain access to company systems' id='option-31' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-      The email sender could gain access to company systems</label>
+      <input type='radio' name='option3' value='They pretend they are someone else when emailing phishing messages, so that's like stealing an identity' id='option-31' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      They pretend they are someone else when emailing phishing messages, so that's like stealing an identity</label>
     <span id='result-31'></span>
   </div>
 
   <div id='block-32' style='padding: 5px;'>
     <label for='option-32' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option3' value='The email sender could steal your personal information or company information' id='option-32' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-      The email sender could steal your personal information or company information</label>
+      <input type='radio' name='option3' value='They ask for personal information on a webpage or pop-up window linked from the phishing email, and they use the information entered to make illegal purchases or commit fraud' id='option-32' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+     They ask for personal information on a webpage or pop-up window linked from the phishing email, and they use the information entered to make illegal purchases or commit fraud</label>
     <span id='result-32'></span>
   </div>
 
   <div id='block-33' style='padding: 5px;'>
     <label for='option-33' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option3' value='The email sender could distribute malware into the company network' id='option-33' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-      The email sender could distribute malware into the company network</label>
+      <input type='radio' name='option3' value='They send a request for the recipient's bank information' id='option-33' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      They send a request for the recipient's bank information</label>
     <span id='result-33'></span>
   </div>
 
   <div id='block-34' style='padding: 10px;'>
     <label for='option-34' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option3' value='All of the above' id='option-34' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-      All of the above</label>
+      <input type='radio' name='option3' value='Gaining information from profile' id='option-34' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Gaining information from profile</label>
     <span id='result-34'></span>
   </div>
   <button type='button' onclick='answer3()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
@@ -222,15 +222,15 @@ if (document.getElementById('option-24').checked) {
     })
   }
 function answer3() {
-if (document.getElementById('option-34').checked) {
-      document.getElementById('block-34').style.border = '3px solid limegreen'
-      document.getElementById('result-34').style.color = 'limegreen'
-      document.getElementById('result-34').innerHTML = 'Correct!'
+if (document.getElementById('option-32').checked) {
+      document.getElementById('block-32').style.border = '3px solid limegreen'
+      document.getElementById('result-32').style.color = 'limegreen'
+      document.getElementById('result-32').innerHTML = 'Correct!'
     }
-    if (document.getElementById('option-32').checked) {
-      document.getElementById('block-32').style.border = '3px solid red'
-      document.getElementById('result-32').style.color = 'red'
-      document.getElementById('result-32').innerHTML = 'Incorrect!'
+    if (document.getElementById('option-34').checked) {
+      document.getElementById('block-34').style.border = '3px solid red'
+      document.getElementById('result-34').style.color = 'red'
+      document.getElementById('result-34').innerHTML = 'Incorrect!'
       correctAnswer3()
     }
     if (document.getElementById('option-33').checked) {
@@ -251,9 +251,9 @@ if (document.getElementById('option-34').checked) {
     let answerQ3 = document.createElement('p')
     document.getElementById('answerQ3').appendChild(answerQ3)
     answerQ3.addEventListener('click', () => {
-      document.getElementById('block-34').style.border = '3px solid limegreen'
-      document.getElementById('result-34').style.color = 'limegreen'
-      document.getElementById('result-34').innerHTML = 'Correct!'
+      document.getElementById('block-32').style.border = '3px solid limegreen'
+      document.getElementById('result-32').style.color = 'limegreen'
+      document.getElementById('result-32').innerHTML = 'Correct!'
       document.getElementById('answerQ3').removeChild(answerQ3)
     })
   }
