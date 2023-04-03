@@ -39,7 +39,7 @@
   </div>
 </div> 
 <main>
-	<div id="content">
+	<div id="quiz">
 		<h1>Phishing Quiz</h1>
 		
 <!--Quiz example code found at https://www.freecodecamp.org/news/multiple-choice-quiz-template/-->
@@ -77,8 +77,8 @@
   <button type='button' onclick='answer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
 <a id='answerQ1'></a>
-<div style='transform: scale(1); position: relative; top: 20px;'>
-			
+		
+<div style='transform: scale(1); position: relative; top: 20px;'>			
 <h3>What can happen if you click on a phishing email link or attachment?</h3>
 		
   <div id='block-21' style='padding: 5px;'>
@@ -111,6 +111,40 @@
   <button type='button' onclick='answer2()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
 <a id='answerQ2'></a>
+
+<div style='transform: scale(1); position: relative; top: 20px;'>			
+<h3>What can happen if you click on a phishing email link or attachment?</h3>
+		
+  <div id='block-31' style='padding: 5px;'>
+    <label for='option-31' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option3' value='The email sender could gain access to company systems' id='option-31' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      The email sender could gain access to company systems</label>
+    <span id='result-31'></span>
+  </div>
+
+  <div id='block-32' style='padding: 5px;'>
+    <label for='option-32' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option3' value='The email sender could steal your personal information or company information' id='option-32' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      The email sender could steal your personal information or company information</label>
+    <span id='result-32'></span>
+  </div>
+
+  <div id='block-33' style='padding: 5px;'>
+    <label for='option-33' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option3' value='The email sender could distribute malware into the company network' id='option-33' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      The email sender could distribute malware into the company network</label>
+    <span id='result-33'></span>
+  </div>
+
+  <div id='block-34' style='padding: 10px;'>
+    <label for='option-34' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option3' value='All of the above' id='option-34' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      All of the above</label>
+    <span id='result-34'></span>
+  </div>
+  <button type='button' onclick='answer3()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+</div>
+<a id='answerQ3'></a>
 
 <script>
   //  function to get the correct answer
@@ -185,6 +219,42 @@ if (document.getElementById('option-24').checked) {
       document.getElementById('result-24').style.color = 'limegreen'
       document.getElementById('result-24').innerHTML = 'Correct!'
       document.getElementById('answerQ2').removeChild(answerQ2)
+    })
+  }
+function answer3() {
+if (document.getElementById('option-34').checked) {
+      document.getElementById('block-34').style.border = '3px solid limegreen'
+      document.getElementById('result-34').style.color = 'limegreen'
+      document.getElementById('result-34').innerHTML = 'Correct!'
+    }
+    if (document.getElementById('option-32').checked) {
+      document.getElementById('block-32').style.border = '3px solid red'
+      document.getElementById('result-32').style.color = 'red'
+      document.getElementById('result-32').innerHTML = 'Incorrect!'
+      correctAnswer3()
+    }
+    if (document.getElementById('option-33').checked) {
+      document.getElementById('block-33').style.border = '3px solid red'
+      document.getElementById('result-33').style.color = 'red'
+      document.getElementById('result-33').innerHTML = 'Incorrect!'
+      correctAnswer3()
+    }
+    if (document.getElementById('option-31').checked) {
+      document.getElementById('block-31').style.border = '3px solid red'
+      document.getElementById('result-31').style.color = 'red'
+      document.getElementById('result-31').innerHTML = 'Incorrect!'
+      correctAnswer3()
+    }
+  }
+  // the functon displays the link to the correct answer
+  function correctAnswer3() {
+    let answerQ3 = document.createElement('p')
+    document.getElementById('answerQ3').appendChild(answerQ3)
+    answerQ3.addEventListener('click', () => {
+      document.getElementById('block-34').style.border = '3px solid limegreen'
+      document.getElementById('result-34').style.color = 'limegreen'
+      document.getElementById('result-34').innerHTML = 'Correct!'
+      document.getElementById('answerQ3').removeChild(answerQ3)
     })
   }
 </script>
