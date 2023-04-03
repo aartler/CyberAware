@@ -42,6 +42,17 @@
 <main>
 	<div id="content">
 		<h1> Jepordy</h1>
+		<p>Hover number to see question</p>
+		<style>
+			.hidden {
+			  display: none;
+			}
+
+			.answer:hover + .hidden {
+			  display: block;
+			  color: red;
+			}
+			</style>
 		
 		   <style>
 		      table, th, td {
@@ -55,7 +66,10 @@
 		      <th>Network</th>
 		   </tr>
 		   <tr style="height:50px">
-		      <td><div class="nav"><a href="#section1" class="btn">300</a></td>
+		       <div class="answer">300</div>
+			<div class="hidden">Question: "What should you do as an employee if you suspect a phishing attack?"</div>
+			   <div class="answer">Hover to see answer</div>
+			   <div class="hidden">Report it so the Cybersecurity team can investigate</div> 
 		      <td><div class="nav"><a href="#section2" class="btn">300</a></td>
 		      <td><div class="nav"><a href="#section3" class="btn">300</a></td>
 		   </tr>
