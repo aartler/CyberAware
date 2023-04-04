@@ -12,10 +12,6 @@
 		<h1>CyberAware</h1>
 		<p> Columbus High School Cybersecurity Awareness Training</p>
 	</div>
- <!--<div id="banner">
-	<img src="Cyber Aware.png" alt="Cyber Aware Logo">
-	<!--Source: Ayla Artler, canva design-->
-<!--</div>-->
 
  <div class="navbar">
   <a href="index.html">Home</a>
@@ -44,56 +40,124 @@
 </div> 
 
 <main>
-	<div id="content">
+	<div id="quiz">
 		<h1> Network Quiz </h1>
-		<!--Quiz example code found at https://www.freecodecamp.org/news/multiple-choice-quiz-template/-->
+<!--Quiz example code found at https://www.freecodecamp.org/news/multiple-choice-quiz-template/-->
 		
-		<div style='transform: scale(1); position: relative; top: 20px;'>
-  <h3>When should you download software?</h3>
+	<div style='transform: scale(1); position: relative; top: 20px;'>
+    <h3>What should you do as an employee if you suspect a phishing attack?</h3>
 
   <div id='block-1' style='padding: 5px;'>
     <label for='option-1' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option' value='Never' id='option-1' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-      Never</label>
+      <input type='radio' name='option' value='Report it so the Cybersecurity team can investigate' id='option-1' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Report it so the Cybersecurity team can investigate</label>
     <span id='result-1'></span>
   </div>
 
   <div id='block-2' style='padding: 5px;'>
     <label for='option-2' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option' value='When told to' id='option-2' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-      When told to</label>
+      <input type='radio' name='option' value='Ignore it' id='option-2' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Ignore it</label>
     <span id='result-2'></span>
   </div>
 
   <div id='block-3' style='padding: 5px;'>
     <label for='option-3' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option' value='You should ask tech support to do it for you' id='option-3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-      You should ask tech support to do it for you</label>
+      <input type='radio' name='option' value='Open the email and see whether it looks legitimate' id='option-3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Open the email and see whether it looks legitimate</label>
     <span id='result-3'></span>
   </div>
 
   <div id='block-4' style='padding: 10px;'>
     <label for='option-4' style=' padding: 5px; font-size: 12px;'>
-      <input type='radio' name='option' value='Whenever you want' id='option-4' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-      whenever you want</label>
+      <input type='radio' name='option' value='Show your coworkers to see what they think' id='option-4' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Show your coworkers to see what they think</label>
     <span id='result-4'></span>
   </div>
   <button type='button' onclick='answer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
 <a id='answerQ1'></a>
-	</div>
+		
+<div style='transform: scale(1); position: relative; top: 20px;'>			
+<h3>What can happen if you click on a phishing email link or attachment?</h3>
+		
+  <div id='block-21' style='padding: 5px;'>
+    <label for='option-21' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option2' value='The email sender could gain access to company systems' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      The email sender could gain access to company systems</label>
+    <span id='result-21'></span>
+  </div>
+
+  <div id='block-22' style='padding: 5px;'>
+    <label for='option-22' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option2' value='The email sender could steal your personal information or company information' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      The email sender could steal your personal information or company information</label>
+    <span id='result-22'></span>
+  </div>
+
+  <div id='block-23' style='padding: 5px;'>
+    <label for='option-23' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option2' value='The email sender could distribute malware into the company network' id='option-23' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      The email sender could distribute malware into the company network</label>
+    <span id='result-23'></span>
+  </div>
+
+  <div id='block-24' style='padding: 10px;'>
+    <label for='option-24' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option2' value='All of the above' id='option-24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      All of the above</label>
+    <span id='result-24'></span>
+  </div>
+  <button type='button' onclick='answer2()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+</div>
+<a id='answerQ2'></a>
+
+<div style='transform: scale(1); position: relative; top: 20px;'>			
+<h3>How can a person executing a phishing attack steal someone's identity?</h3>
+		
+  <div id='block-31' style='padding: 5px;'>
+    <label for='option-31' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option3' value='They pretend they are someone else when emailing phishing messages, so that's like stealing an identity' id='option-31' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      They pretend they are someone else when emailing phishing messages, so that's like stealing an identity</label>
+    <span id='result-31'></span>
+  </div>
+
+  <div id='block-32' style='padding: 5px;'>
+    <label for='option-32' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option3' value='They ask for personal information on a webpage or pop-up window linked from the phishing email, and they use the information entered to make illegal purchases or commit fraud' id='option-32' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+     They ask for personal information on a webpage or pop-up window linked from the phishing email, and they use the information entered to make illegal purchases or commit fraud</label>
+    <span id='result-32'></span>
+  </div>
+
+  <div id='block-33' style='padding: 5px;'>
+    <label for='option-33' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option3' value='They send a request for the recipient's bank information' id='option-33' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      They send a request for the recipient's bank information</label>
+    <span id='result-33'></span>
+  </div>
+
+  <div id='block-34' style='padding: 10px;'>
+    <label for='option-34' style=' padding: 5px; font-size: 12px;'>
+      <input type='radio' name='option3' value='Gaining information from profile' id='option-34' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      Gaining information from profile</label>
+    <span id='result-34'></span>
+  </div>
+  <button type='button' onclick='answer3()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+</div>
+<a id='answerQ3'></a>
+
 <script>
   //  function to get the correct answer
   function answer1() {
-    if (document.getElementById('option-2').checked) {
-      document.getElementById('block-2').style.border = '3px solid limegreen'
-      document.getElementById('result-2').style.color = 'limegreen'
-      document.getElementById('result-2').innerHTML = 'Correct!'
-    }
     if (document.getElementById('option-1').checked) {
-      document.getElementById('block-1').style.border = '3px solid red'
-      document.getElementById('result-1').style.color = 'red'
-      document.getElementById('result-1').innerHTML = 'Incorrect!'
+      document.getElementById('block-1').style.border = '3px solid limegreen'
+      document.getElementById('result-1').style.color = 'limegreen'
+      document.getElementById('result-1').innerHTML = 'Correct!'
+    }
+    if (document.getElementById('option-2').checked) {
+      document.getElementById('block-2').style.border = '3px solid red'
+      document.getElementById('result-2').style.color = 'red'
+      document.getElementById('result-2').innerHTML = 'Incorrect!'
       correctAnswer1()
     }
     if (document.getElementById('option-3').checked) {
@@ -108,16 +172,89 @@
       document.getElementById('result-4').innerHTML = 'Incorrect!'
       correctAnswer1()
     }
+     
   }
   // the functon displays the link to the correct answer
   function correctAnswer1() {
     let answerQ1 = document.createElement('p')
     document.getElementById('answerQ1').appendChild(answerQ1)
-    showAnswer1.addEventListener('click', () => {
+    answerQ1.addEventListener('click', () => {
       document.getElementById('block-2').style.border = '3px solid limegreen'
       document.getElementById('result-2').style.color = 'limegreen'
       document.getElementById('result-2').innerHTML = 'Correct!'
       document.getElementById('answerQ1').removeChild(answerQ1)
+    })
+  }
+function answer2() {
+if (document.getElementById('option-24').checked) {
+      document.getElementById('block-24').style.border = '3px solid limegreen'
+      document.getElementById('result-24').style.color = 'limegreen'
+      document.getElementById('result-24').innerHTML = 'Correct!'
+    }
+    if (document.getElementById('option-22').checked) {
+      document.getElementById('block-22').style.border = '3px solid red'
+      document.getElementById('result-22').style.color = 'red'
+      document.getElementById('result-22').innerHTML = 'Incorrect!'
+      correctAnswer2()
+    }
+    if (document.getElementById('option-23').checked) {
+      document.getElementById('block-23').style.border = '3px solid red'
+      document.getElementById('result-23').style.color = 'red'
+      document.getElementById('result-23').innerHTML = 'Incorrect!'
+      correctAnswer2()
+    }
+    if (document.getElementById('option-21').checked) {
+      document.getElementById('block-21').style.border = '3px solid red'
+      document.getElementById('result-21').style.color = 'red'
+      document.getElementById('result-21').innerHTML = 'Incorrect!'
+      correctAnswer2()
+    }
+  }
+  // the functon displays the link to the correct answer
+  function correctAnswer2() {
+    let answerQ2 = document.createElement('p')
+    document.getElementById('answerQ2').appendChild(answerQ2)
+    answerQ2.addEventListener('click', () => {
+      document.getElementById('block-24').style.border = '3px solid limegreen'
+      document.getElementById('result-24').style.color = 'limegreen'
+      document.getElementById('result-24').innerHTML = 'Correct!'
+      document.getElementById('answerQ2').removeChild(answerQ2)
+    })
+  }
+function answer3() {
+if (document.getElementById('option-32').checked) {
+      document.getElementById('block-32').style.border = '3px solid limegreen'
+      document.getElementById('result-32').style.color = 'limegreen'
+      document.getElementById('result-32').innerHTML = 'Correct!'
+    }
+    if (document.getElementById('option-34').checked) {
+      document.getElementById('block-34').style.border = '3px solid red'
+      document.getElementById('result-34').style.color = 'red'
+      document.getElementById('result-34').innerHTML = 'Incorrect!'
+      correctAnswer3()
+    }
+    if (document.getElementById('option-33').checked) {
+      document.getElementById('block-33').style.border = '3px solid red'
+      document.getElementById('result-33').style.color = 'red'
+      document.getElementById('result-33').innerHTML = 'Incorrect!'
+      correctAnswer3()
+    }
+    if (document.getElementById('option-31').checked) {
+      document.getElementById('block-31').style.border = '3px solid red'
+      document.getElementById('result-31').style.color = 'red'
+      document.getElementById('result-31').innerHTML = 'Incorrect!'
+      correctAnswer3()
+    }
+  }
+  // the functon displays the link to the correct answer
+  function correctAnswer3() {
+    let answerQ3 = document.createElement('p')
+    document.getElementById('answerQ3').appendChild(answerQ3)
+    answerQ3.addEventListener('click', () => {
+      document.getElementById('block-32').style.border = '3px solid limegreen'
+      document.getElementById('result-32').style.color = 'limegreen'
+      document.getElementById('result-32').innerHTML = 'Correct!'
+      document.getElementById('answerQ3').removeChild(answerQ3)
     })
   }
 </script>
