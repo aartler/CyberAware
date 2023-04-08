@@ -72,7 +72,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 } 
-
+#image {float: left;}
 #content { display: block;
 	margin-left: auto;
 	margin-right: auto;
