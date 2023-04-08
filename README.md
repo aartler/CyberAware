@@ -27,3 +27,6 @@ News Articles
 https://www.forbes.com/sites/frederickhess/2022/10/21/schools-are-getting-hit-hard-by-cyberattacks-what-can-they-do-about-it/?sh=bf42f17b71c3
 https://abcnews.go.com/US/baltimore-schools-failed-fully-act-security-recommendations-cyber/story?id=96671802
 https://www.govtech.com/education/k-12/cyber-attacks-on-schools-who-what-why-and-now-what
+
+Picture
+https://www.parkerdatavoice.com/blog?p=parker-data--voice-receives-cybersecurity-certification-190521
